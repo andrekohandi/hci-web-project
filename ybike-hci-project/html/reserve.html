@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" href="../css/reserve.css">
+    <link rel="icon" href="../images/logo.png">
+    <script src="../js/reserve.js" defer></script>
+    <title>YBIKE - Reserve</title>
+</head>
+<body>
+    <header>
+        <!-- NAVBAR -->
+        <a href="index.html">
+            <img src="../images/logo.png" alt="logo">
+        </a>
+        <div class="navbar">
+            <ul class="links">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="parent-link">
+                    <a href="#">Products</a>
+                    <ul class="sub-links">
+                        <li><a href="kawasako.html">Kawasako</a></li>
+                        <li><a href="vixian.html">Vixian</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="gallery.html">Gallery</a>
+                </li>
+                <li class="reserve">
+                    <a href="reserve.html">Reserve</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container">
+            <form action="" method="post" id="form">
+    
+                <div class="form-group">
+                    <label for="">Product Type</label>
+                    <select name="type" id="type" class="form-control">
+                        <option value="">-- Choose product type --</option>
+                        <option value="kawasako1">Kawasako Type Sport</option>
+                        <option value="kawasako2">Kawasako Type Racing</option>
+                        <option value="kawasako3">Kawasako Type Dual sport</option>
+                        <option value="vixian1">Vixian Type Sport</option>
+                        <option value="vixian2">Vixian Type Naked</option>
+                        <option value="vixian3">Vixian Type Cross</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="">Quantity</label>
+                    <input type="number" name="quantity" id="quantity" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="">Color</label>
+                    <input type="color" name="color" id="color" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="">Name</label>
+                    <input type="text" name="name" id="name" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="">Phone</label>
+                    <br>
+                    <input type="tel" name="phone" id="phone" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}">
+                    <br>
+                    <small>Format: 1234-5678-9012</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="">Email</label>
+                    <input type="text" name="email" id="email" class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label for="">Address</label>
+                    <br>
+                    <textarea name="address" id="address" cols="60" rows="5"></textarea>
+                </div>
+
+    
+                <div class="form-group">
+                    <input type="checkbox" name="agreement" id="agreement">
+                    <label for="agreement">I agree with the T&C</label>
+                </div>
+                
+                <div class="form-group">
+                    <label for="" id="error"></label>
+                </div>
+    
+                <div class="form-group">
+                    <button type="submit" class="form-group">Order</button>
+                </div>
+    
+            </form>
+        </div>
+    </main>
+    
+    <footer>
+        <span>Copyright &copy; 2021 YBIKE</span>
+        <a href="https://www.twitter.com">
+            <img src="../images/twitter.png" alt="twitter">
+        </a>
+        <a href="https://www.facebook.com">
+            <img src="../images/facebook.png" alt="facebook">
+        </a>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+}
+
+.gallery-images {
+    display: grid;
+    grid-template-columns: repeat(3, 30.5%); 
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.gallery-images img {
+    width: 295px;
+    margin-left: 3px;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+footer {
+    padding: 15px;
+    background-color: #10ac84;
+    position: absolute;
+    bottom: 0;
+    padding: 10px 15px;
+    color: white;
+    position: fixed;
+}
+
+footer span {
+    font-size: 18px;
+}
+
+footer img {
+    width: 2%;
+    float: right;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+    .gallery-images {
+        grid-template-columns: repeat(2, 50%);
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .gallery-images {
+        grid-template-columns: 100%;
+    }
+}
+

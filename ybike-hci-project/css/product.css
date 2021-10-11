@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    float: right;
+    padding-top: 25px;
+}
+
+header img {
+    width: 190px;
+    height: 130px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar a:hover {
+    color:greenyellow;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links>li {
+    margin: 0 40px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: large;
+    white-space: nowrap;
+}
+
+.parent-link {
+    position: relative;
+}
+
+.sub-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 30%;
+    transform: translate(-30%, 0);
+    background-color: #10ac84;
+    padding: 15px;
+}
+
+.parent-link:hover .sub-links {
+    display: block;
+}
+
+#jumbotron {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#jumbotron img {
+    width: 150px;
+    height: 100px;
+}
+
+footer {
+    padding: 15px;
+    background-color: #10ac84;
+    position: absolute;
+    bottom: 0;
+    padding: 10px 15px;
+    color: white;
+    position: fixed;
+}
+
+footer span {
+    font-size: 18px;
+}
+
+footer img {
+    width: 2%;
+    float: right;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    /* ini akan jalan disaat web kita 1000px kebawah */
+    .content {
+        grid-template-columns: repeat(2, 25%);
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    /* ini akan jalan disaat web kita 500px kebawah */
+    .content {
+        grid-template-columns: 100%;
+    }
+}
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider ul {
+    display: block;
+    list-style: none;
+    position: relative;
+    height: 350px;
+    width: 600px;
+    margin-bottom: 20px;
+}
+
+.slider li {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: opacity 0.5s;
+}
+
+.slider .btn {
+    margin: 30px;
+}
+
+.slider .visible {
+    opacity: 1;
+}
+
+.motor1{
+    display: flex;
+    margin: 20px;
+}
